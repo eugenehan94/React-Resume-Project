@@ -4,14 +4,15 @@ import { FaAngleRight } from "react-icons/fa";
 
 function App() {
   const [arrayIndex, setArrayIndex] = useState(0);
-  const [jobList, setJobList] = useState([arrayIndex]);
+  const [jobList, setJobList] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const fetchJobs = async () => {
     const response = await fetch("http://localhost:5000/job");
     const data = await response.json();
-    setLoading(false);
+
     setJobList(data);
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
       <div className="underline"></div>
       <div className="subContainer">
         <div className="button-container">
+          <h1>Jobs</h1>
           {jobList.map((job, id) => {
             return (
               <div>
@@ -46,9 +48,22 @@ function App() {
               </div>
             );
           })}
+
+          <h1>Volunteer</h1>
         </div>
 
-        <div className="job-container"></div>
+        <div className="job-container">
+          <h1>{jobList[arrayIndex].title}</h1>
+          <h2>{jobList[arrayIndex].date}</h2>
+          {jobList[arrayIndex].description.map((points) => {
+            return (
+              <div className="job-description">
+                <FaAngleRight />
+                <p>{points}</p>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );
