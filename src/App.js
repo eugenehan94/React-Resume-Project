@@ -32,37 +32,41 @@ function App() {
     <div>
       <h1 className="title">Experience</h1>
       <div className="underline"></div>
-      <div className="subContainer">
-        <div className="button-container">
-          <h1>Jobs</h1>
-          {jobList.map((job, id) => {
-            return (
-              <div>
-                <button
-                  key={id}
-                  className={`job-button ${arrayIndex === id && "active"}`}
-                  onClick={() => setArrayIndex(id)}
-                >
-                  {job.company}
-                </button>
-              </div>
-            );
-          })}
+      <div>
+        <div className="subContainer">
+          <div className="button-container">
+            <h1 className="button-heading">Jobs</h1>
+            {jobList.map((job, id) => {
+              console.log(id);
+              return (
+                <div key={id}>
+                  <button
+                    key={id}
+                    className={`job-button ${arrayIndex === id && "active"}`}
+                    onClick={() => setArrayIndex(id)}
+                  >
+                    {job.company}
+                  </button>
+                  {id === 3 ? (
+                    <h1 className="button-heading">Volunteer</h1>
+                  ) : null}
+                </div>
+              );
+            })}
+          </div>
 
-          <h1>Volunteer</h1>
-        </div>
-
-        <div className="job-container">
-          <h1>{jobList[arrayIndex].title}</h1>
-          <h2>{jobList[arrayIndex].date}</h2>
-          {jobList[arrayIndex].description.map((points) => {
-            return (
-              <div className="job-description">
-                <FaAngleRight />
-                <p>{points}</p>
-              </div>
-            );
-          })}
+          <div className="job-container">
+            <h1>{jobList[arrayIndex].title}</h1>
+            <h2>{jobList[arrayIndex].date}</h2>
+            {jobList[arrayIndex].description.map((points, id) => {
+              return (
+                <div className="job-description" key={id}>
+                  <FaAngleRight />
+                  <p>{points}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

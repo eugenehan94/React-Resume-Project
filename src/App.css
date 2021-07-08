@@ -23,6 +23,10 @@
   flex-wrap: wrap;
   margin: 0 2rem;
 }
+.button-heading {
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
 .job-button {
   background: none;
   border: none;
