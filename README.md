@@ -1,3 +1,14 @@
+# React Resume Project
+
+A React js project showcasing my resume. The use clicks on the company name on the left side bar and the corresponding title, date and description is loaded.
+
+The information is read from a REST API created with JSON Server
+
+## Main Page
+
+![MainPage](src/screenshot/mainScreen.jpg)
+
+-------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
