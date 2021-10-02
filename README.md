@@ -4,6 +4,8 @@ A React js project showcasing my resume. The use clicks on the company name on t
 
 The information is read from a REST API created with JSON Server
 
+Github Page link: https://eugenehan94.github.io/React-Resume-Project/
+
 ## Main Page
 
 ![MainPage](src/screenshot/mainScreen.jpg)
