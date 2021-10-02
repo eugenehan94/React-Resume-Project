@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Resume-Project/static/css/main.a2170f94.chunk.css",
-    "main.js": "/React-Resume-Project/static/js/main.6979782b.chunk.js",
-    "main.js.map": "/React-Resume-Project/static/js/main.6979782b.chunk.js.map",
+    "main.css": "/React-Resume-Project/static/css/main.f23b9574.chunk.css",
+    "main.js": "/React-Resume-Project/static/js/main.520388e7.chunk.js",
+    "main.js.map": "/React-Resume-Project/static/js/main.520388e7.chunk.js.map",
     "runtime-main.js": "/React-Resume-Project/static/js/runtime-main.d17e47c5.js",
     "runtime-main.js.map": "/React-Resume-Project/static/js/runtime-main.d17e47c5.js.map",
     "static/js/2.5caa7360.chunk.js": "/React-Resume-Project/static/js/2.5caa7360.chunk.js",
     "static/js/2.5caa7360.chunk.js.map": "/React-Resume-Project/static/js/2.5caa7360.chunk.js.map",
     "index.html": "/React-Resume-Project/index.html",
-    "static/css/main.a2170f94.chunk.css.map": "/React-Resume-Project/static/css/main.a2170f94.chunk.css.map",
+    "static/css/main.f23b9574.chunk.css.map": "/React-Resume-Project/static/css/main.f23b9574.chunk.css.map",
     "static/js/2.5caa7360.chunk.js.LICENSE.txt": "/React-Resume-Project/static/js/2.5caa7360.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d17e47c5.js",
     "static/js/2.5caa7360.chunk.js",
-    "static/css/main.a2170f94.chunk.css",
-    "static/js/main.6979782b.chunk.js"
+    "static/css/main.f23b9574.chunk.css",
+    "static/js/main.520388e7.chunk.js"
   ]
 }
