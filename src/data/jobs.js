@@ -47,7 +47,6 @@ const jobs = [
     title: "Research Assistance",
     company: "Rousseau Food Research Laboratory - Ryerson University",
     description: [
-      "Link: https://www.sciencedirect.com/science/article/pii/S0022030216305495",
       "Increased the β-casein phosphopeptide yield by 32% compared to the accepted method through multiple experiments. This work is currently being published to scientific journals ",
       "Analyzed any inconsistency an unexpected result to determine experimental errors. Allowing the experimental procedures to continue.",
       "Presented and educated the Ryerson University science community about the β-casein phosphopeptide at multiple time-restricted presentations. Which improved my effective and efficient communication skills.",

@@ -44,6 +44,7 @@
 
 .job-container {
   margin: 0 2rem;
+  overflow-wrap: break-word;
 }
 .job-container h1 {
   margin: 0;
@@ -64,4 +65,14 @@
 .job-description p {
   margin: 0.5rem;
   letter-spacing: 0.15rem;
+}
+
+@media screen and (max-width: 800px) {
+  .subContainer {
+    flex-direction: column;
+  }
+  .job-container {
+    margin: 2rem 1rem;
+    overflow-wrap: break-word;
+  }
 }
