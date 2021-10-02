@@ -2,21 +2,28 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { FaAngleRight } from "react-icons/fa";
 
+//Gets the data from file - comment out when using JSON Server
+import jobs from "./data/jobs";
+
 function App() {
   const [arrayIndex, setArrayIndex] = useState(0);
   const [jobList, setJobList] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const fetchJobs = async () => {
-    const response = await fetch("http://localhost:5000/job");
-    const data = await response.json();
+  //Code for JSON SERVER -
+  // const fetchJobs = async () => {
+  //   const response = await fetch("http://localhost:5000/job");
+  //   const data = await response.json();
 
-    setJobList(data);
-    setLoading(false);
-  };
+  //   setJobList(data);
+  //   setLoading(false);
+  // };
 
   useEffect(() => {
-    fetchJobs();
+    // Comment out the two set states to use JSON SERVER
+    // fetchJobs();
+    setJobList(jobs);
+    setLoading(false);
   }, []);
 
   if (loading) {
